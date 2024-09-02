@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/Users/davidsuh/.vim'
+let g:netrw_dirhist_2='/Users/davidsuh/programming/school/mpcs/sci_c_56430/mpcs56430-2023-autumn-assignment-4-davidsuh11/assignment_a/problem1'
+let g:netrw_dirhist_1='/Users/davidsuh/programming/school/mpcs/sci_c_56430/mpcs56430-2023-autumn-assignment-4-davidsuh11/assignment_a/problem2'

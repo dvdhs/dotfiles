@@ -1,0 +1,9 @@
+{
+  "diagnostic": {
+    "virtualText": true,
+    "virtualTextCurrentLineOnly": false 
+  },
+  "suggest": {
+    "noselect" : true
+  }
+}

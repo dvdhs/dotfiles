@@ -1,0 +1,18 @@
+== David Suh's Personal dotfiles ==
+
+1. Overview
+
+This repo contains my personal dotfiles. It is meant to be used with GNU stow.
+
+Usage:
+
+git clone https://github.com/dvdhs/dotfiles.git
+cd dotfiles
+stow .
+
+2. Notes
+
+The repo should try to maintain maximum compatability with bash. The zshrc
+largely just sources the bashrc, and most additions should try to stick to
+being bash-compatible. It should be avoided using any zsh-specific conviniences
+or features unless they are particularly neccessary; there is some branching due to shell differences in e.g. PS1 formats.

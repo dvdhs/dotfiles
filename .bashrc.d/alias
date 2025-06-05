@@ -1,2 +1,9 @@
+# ls family
 alias ls='ls -F --color'
 alias ll='ls -lh'
+
+# vim-related
+alias v='vim'
+
+vf() { fzf -m --bind 'enter:become(vim {})' }
+

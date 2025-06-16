@@ -4,8 +4,6 @@ if [ -d "$HOME/.bashrc.d" ]; then
   done
 fi
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-export PATH="$HOME/.local/bin:$PATH"
-export DYLD_LIBRARY_PATH="$HOME/.local/lib:$DYLD_LIBRARY_PATH"
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 [ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"

@@ -1,13 +1,15 @@
-# 
-
 # ls family
 alias ls='ls -F --color'
 alias ll='ls -lh'
 
 # vim-related
 alias v='vim'
+alias suvim='sudo -E vim'
 
 vf() { 
   fzf -m --bind "enter:become(vim {})" 
 }
 
+# config edit alias
+alias dotedit='find ~/dotfiles -maxdepth 1 -name ".*" | vf'
+alias ebashrc="$EDITOR ~/.bashrc"

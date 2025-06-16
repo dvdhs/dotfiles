@@ -6,7 +6,6 @@ filetype off
 set statusline+=%#warningmsg#
 set statusline+=%*
 
-
 " Auto install vim-plug if not installed.
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
@@ -124,6 +123,9 @@ set ignorecase
 set smartcase
 set showmatch
 map <leader><space> :let @/=''<cr> " clear search
+
+" fzf shortcut
+map <leader>f :Files<cr>
 
 " Remap help key.
 inoremap <F1> <ESC>:set invfullscreen<CR>a

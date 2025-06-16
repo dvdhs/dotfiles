@@ -6,10 +6,23 @@ alias ll='ls -lh'
 alias v='vim'
 alias suvim='sudo -E vim'
 
-vf() { 
-  fzf -m --bind "enter:become(vim {})" 
+vf() {
+  fzf -m --bind "enter:become(vim {})"
 }
 
 # config edit alias
 alias dotedit='find ~/dotfiles -maxdepth 1 -name ".*" | vf'
 alias ebashrc="$EDITOR ~/.bashrc"
+
+# tmux refresh ssh auth sock
+# credit: https://babushk.in/posts/renew-environment-tmux.html
+if [ -n "$TMUX" ]; then
+  function ssh_auth_refresh {
+    export $(tmux show-environment | grep "^SSH_AUTH_SOCK")
+    export $(tmux show-environment | grep "^DISPLAY")
+  }
+else
+  function ssh_auth_refresh {
+    echo "not in tmux!"
+  }
+fi

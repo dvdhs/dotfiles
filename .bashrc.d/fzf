@@ -1,6 +1,9 @@
 # try to source files files that are possibly provided by the
 # packages. Mostly for fzf.
+#
 for base in ~/.nix-profile ~/.local; do
-  KEYBIND_FILE="$base/share/fzf/key-bindings.bash"
-  [ -f "$KEYBIND_FILE" ] && source "$KEYBIND_FILE"
+  KEYBIND_FILE_BASH="$base/share/fzf/key-bindings.bash"
+  KEYBIND_FILE_ZSH="$base/share/fzf/key-bindings.zsh"
+  [ -n "$BASH_VERSION" ] && [ -f "$KEYBIND_FILE" ] && source "$KEYBIND_FILE_BASH"
+  [ -n "$ZSH_VERSION"  ] && [ -f "$KEYBIND_FILE" ] && source "$KEYBIND_FILE_ZSH"
 done

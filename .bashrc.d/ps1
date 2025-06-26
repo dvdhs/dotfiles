@@ -6,7 +6,7 @@ RESET="\033[39m"
 export GIT_PS1_SHOWDIRTYSTATE=1
 if [ -n "$ZSH_NAME" ]; then
   setopt PROMPT_SUBST;
-  export PS1='%n@%m %F{yellow}%1~%f %B$(__git_ps1 "(%s)")%b %# '
+  export PS1='[%n@%m %F{yellow}%1~%f] %B$(__git_ps1 "(%s)")%b %# '
 elif [ -n "$BASH" ]; then 
   export PS1='[\u@\h \W] $(__git_ps1 "(%s)") ' 
 fi

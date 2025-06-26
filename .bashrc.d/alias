@@ -11,8 +11,9 @@ vf() {
 }
 
 # config edit alias
-alias dotedit='find ~/dotfiles -maxdepth 1 -name ".*" | vf'
-alias ebashrc="$EDITOR ~/.bashrc"
+alias confdot='find ~/dotfiles -maxdepth 1 -name ".*" | vf'
+alias confbash="$EDITOR ~/.bashrc"
+alias confbashd="find ~/.bashrc.d/* -type f -maxdepth 1 | vf"
 
 # tmux refresh ssh auth sock
 # credit: https://babushk.in/posts/renew-environment-tmux.html

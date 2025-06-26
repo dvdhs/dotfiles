@@ -6,6 +6,16 @@
   "suggest": {
     "noselect" : true
   },
-  "snippets.ultisnips.pythonPrompt": false
+  "snippets.ultisnips.pythonPrompt": false,
+  "clangd.fallbackFlags": [
+    "-std=c++17"
+  ],
+  "snippets.ultisnips.pythonPrompt": false,
+  "languageserver": {
+    "nix": {
+      "command": "nixd",
+      "filetypes": ["nix"]
+    }
+  }
 }
 

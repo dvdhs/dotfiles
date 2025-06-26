@@ -15,6 +15,11 @@ alias confdot='find ~/dotfiles -maxdepth 1 -name ".*" | vf'
 alias confbash="$EDITOR ~/.bashrc"
 alias confbashd="find ~/.bashrc.d/* -type f -maxdepth 1 | vf"
 
+# writeback to local pbcopy (MacOS)
+# credit: https://seancoates.com/blogs/remote-pbcopy
+# make sure you are using GNU version of netcat.
+alias lpbcopy='cat | nc -c localhost 2224'
+
 # tmux refresh ssh auth sock
 # credit: https://babushk.in/posts/renew-environment-tmux.html
 if [ -n "$TMUX" ]; then

@@ -4,6 +4,6 @@
 for base in ~/.nix-profile ~/.local; do
   KEYBIND_FILE_BASH="$base/share/fzf/key-bindings.bash"
   KEYBIND_FILE_ZSH="$base/share/fzf/key-bindings.zsh"
-  [ -n "$BASH_VERSION" ] && [ -f "$KEYBIND_FILE" ] && source "$KEYBIND_FILE_BASH"
-  [ -n "$ZSH_VERSION"  ] && [ -f "$KEYBIND_FILE" ] && source "$KEYBIND_FILE_ZSH"
+  [ -n "$BASH_VERSION" ] && [ -f "$KEYBIND_FILE_BASH" ] && source "$KEYBIND_FILE_BASH"
+  [ -n "$ZSH_VERSION"  ] && [ -f "$KEYBIND_FILE_ZSH" ] && source "$KEYBIND_FILE_ZSH"
 done

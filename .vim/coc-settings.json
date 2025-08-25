@@ -16,6 +16,7 @@
       "command": "nixd",
       "filetypes": ["nix"]
     }
-  }
+  },
+  "clangd.fallbackFlags" : ["-xc++"]
 }
 
